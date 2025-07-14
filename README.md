@@ -13,16 +13,6 @@ Fonctionnalités Principales
 
 📊 Tableau de bord intuitif pour le suivi des transactions
 
-graph TD
-    A[Capteur RFID] -->|MQTT| B(Stock Monitor)
-    B --> C{Stock Bas?}
-    C -->|Oui| D[Email au Fournisseur]
-    C -->|Non| B
-    D --> E[Réponse Fournisseur]
-    E --> F[Création Contrat]
-    F --> G[Enregistrement sur Hashgraph]
-    G --> H[Paiement Automatisé]
-    H --> I[Tableau de Bord]
 
 
     Prérequis
@@ -64,18 +54,7 @@ node rfidSimulator.js
 node supplierSimulator.js
 Accéder au tableau de bord: http://localhost:3001
 
-Structure des Fichiers
-text
-├── config.js               # Configuration de l'application
-├── dashboard.js            # Serveur principal et interface
-├── rfidSimulator.js        # Simulateur de tags RFID
-├── supplierSimulator.js    # Simulateur de réponses fournisseurs
-├── stockMonitor.js         # Surveillance des niveaux de stock
-├── contractManager.js      # Gestion des contrats
-├── hashgraphHandler.js     # Interactions avec Hashgraph
-├── emailHandler.js         # Gestion des emails
-└── views/                  # Templates EJS
-    └── dashboard.ejs       # Interface utilisateur
+
 Configuration Hedera
 Créez un compte testnet sur Hedera Portal
 
