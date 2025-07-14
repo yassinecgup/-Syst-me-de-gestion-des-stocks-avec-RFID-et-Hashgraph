@@ -44,13 +44,13 @@ Utilisation
 Lancer les différents services dans des terminaux séparés:
 
 bash
-# Terminal 1 - Tableau de bord
+-terminal1
 node dashboard.js
 
-# Terminal 2 - Simulateur RFID
+-terminal2
 node rfidSimulator.js
 
-# Terminal 3 - Simulateur Fournisseur (optionnel)
+-terminal3
 node supplierSimulator.js
 Accéder au tableau de bord: http://localhost:3001
 
